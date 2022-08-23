@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 int getPos(int *arr, int n, int num){
-    int pos = NULL;
+    int pos = -1;
     for (int i = 0; i < n-1; i++){
         if(num == arr[i]){
             pos = i;
@@ -29,7 +29,7 @@ int main() {
     printf("\nEnter the number you want to search for: ");
     scanf("%d", &query);
     int position = getPos(arr, range, query);
-    if(position == NULL)printf("number NOT found in array!!!");
+    if(position == -1)printf("number NOT found in array!!!");
     else printf("Number found in array at position [%d]", position);
     return 0;
 }
