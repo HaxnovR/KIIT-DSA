@@ -6,7 +6,6 @@ typedef struct node{
     struct node *next;
     struct node *prev;
 }node;
-
 node *head, *ref;
 
 void create(int n){

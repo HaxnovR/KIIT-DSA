@@ -24,8 +24,7 @@ int isEmpty(struct Queue* queue){
 }
 
 void enqueue(struct Queue* queue, int item){
-	if (isFull(queue))
-		return;
+	if (isFull(queue))return;
 	queue->rear = (queue->rear + 1) % queue->capacity;
 	queue->array[queue->rear] = item;
 	queue->size++;
@@ -63,7 +62,7 @@ int main(){
     printf("Start\n");
     int choice,item;
 	struct Queue* queue = createQueue();
-    while (1)    {
+    while (1){
         printf("\n\n1. To Queue an item.");
         printf("\n2. To Dequeue an item.");
         printf("\n3. To peek an item.");
@@ -106,7 +105,5 @@ int main(){
             break;
         }
     }
-    
-
 	return 0;
 }

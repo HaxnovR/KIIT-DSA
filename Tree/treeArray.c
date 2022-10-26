@@ -4,11 +4,6 @@
 
 int bt[20];
 
-// struct node{
-//     int left, right;
-// };
-
-
 void create(int i){
     int x,r;
     printf("\n\nEnter element for root: ");
